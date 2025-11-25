@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT SDM Certificate Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="date"],
+        .form-group input[type="number"],
+        .form-group select,
+        .form-group textarea,
+        .form-group input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        /* Pop-up styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 400px;
+        }
+        .popup .close-btn {
+            background-color: #ff6c6c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .popup .close-btn:hover {
+            background-color: #ff4c4c;
+        }
+        .popup .submit-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+        .popup .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MIT SDM Certificate Application Form</h1>
+        <form action="#" method="post">
+
+            <!-- Employment Section -->
+            <fieldset>
+                <legend>Employment History</legend>
+                <div class="form-group">
+                    <label for="workExperience">How many years of professional work experience do you have? *</label>
+                    <input type="text" id="workExperience" name="workExperience" onclick="openPopup()" readonly>
+                </div>
+            </fieldset>
+
+            <!-- Other Sections Here -->
+
+            <div class="form-group">
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </div>
+        </form>
+    </div>
+
+    <!-- Pop-up Modal for Work Experience -->
+    <div class="popup" id="workExperiencePopup">
+        <h2>Enter Years of Experience</h2>
+        <div class="form-group">
+            <label for="experienceYears">Years of Professional Work Experience:</label>
+            <input type="number" id="experienceYears" name="experienceYears" min="0" required>
+        </div>
+        <div class="form-group">
+            <button class="submit-btn" onclick="saveExperience()">Save</button>
+            <button class="close-btn" onclick="closePopup()">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to open the pop-up
+        function openPopup() {
+            document.getElementById("workExperiencePopup").style.display = "block";
+        }
+
+        // Function to close the pop-up
+        function closePopup() {
+            document.getElementById("workExperiencePopup").style.display = "none";
+        }
+
+        // Function to save the value entered and close the pop-up
+        function saveExperience() {
+            var experience = document.getElementById("experienceYears").value;
+            document.getElementById("workExperience").value = experience + " years";
+            closePopup();
+        }
+    </script>
+</body>
+</html>
