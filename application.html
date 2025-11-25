@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT SDM Certificate Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="date"],
+        .form-group input[type="number"],
+        .form-group select,
+        .form-group textarea,
+        .form-group input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MIT SDM Certificate Application Form</h1>
+        <form action="#" method="post">
+            
+            <!-- Personal Background Section -->
+            <fieldset>
+                <legend>Personal Background</legend>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="citizenship">Citizenship:</label>
+                    <input type="text" id="citizenship" name="citizenship" required>
+                </div>
+            </fieldset>
+
+            <!-- Academic Information Section -->
+            <fieldset>
+                <legend>Academic Information</legend>
+                <div class="form-group">
+                    <label for="undergradDegree">Undergraduate Degree:</label>
+                    <input type="text" id="undergradDegree" name="undergradDegree" required>
+                </div>
+                <div class="form-group">
+                    <label for="institution">Institution Name:</label>
+                    <input type="text" id="institution" name="institution" required>
+                </div>
+                <div class="form-group">
+                    <label for="gradYear">Graduation Year:</label>
+                    <input type="number" id="gradYear" name="gradYear" required>
+                </div>
+                <div class="form-group">
+                    <label for="gpa">GPA (if applicable):</label>
+                    <input type="text" id="gpa" name="gpa">
+                </div>
+                <div class="form-group">
+                    <label for="program">Program of Interest:</label>
+                    <input type="text" id="program" name="program" required>
+                </div>
+            </fieldset>
+
+            <!-- Leadership Roles and Awards Section -->
+            <fieldset>
+                <legend>Leadership Roles and Awards</legend>
+                <div class="form-group">
+                    <label for="orgName">Organization Name:</label>
+                    <input type="text" id="orgName" name="orgName" required>
+                </div>
+                <div class="form-group">
+                    <label for="roleAward">Role/Award:</label>
+                    <input type="text" id="roleAward" name="roleAward" required>
+                </div>
+                <div class="form-group">
+                    <label for="orgLocation">Organization Location:</label>
+                    <input type="text" id="orgLocation" name="orgLocation" required>
+                </div>
+                <div class="form-group">
+                    <label for="orgCountry">Country:</label>
+                    <input type="text" id="orgCountry" name="orgCountry" required>
+                </div>
+                <div class="form-group">
+                    <label for="orgCity">City:</label>
+                    <input type="text" id="orgCity" name="orgCity" required>
+                </div>
+                <div class="form-group">
+                    <label for="datesFrom">Dates of Participation - From:</label>
+                    <input type="date" id="datesFrom" name="datesFrom" required>
+                </div>
+                <div class="form-group">
+                    <label for="datesTo">To:</label>
+                    <input type="date" id="datesTo" name="datesTo" required>
+                </div>
+                <div class="form-group">
+                    <label for="freqParticipation">Frequency of Participation:</label>
+                    <input type="text" id="freqParticipation" name="freqParticipation" required>
+                </div>
+                <div class="form-group">
+                    <label for="hoursPerWeek">Hours per Week:</label>
+                    <input type="number" id="hoursPerWeek" name="hoursPerWeek" required>
+                </div>
+                <div class="form-group">
+                    <label for="weeksPerYear">Weeks per Year:</label>
+                    <input type="number" id="weeksPerYear" name="weeksPerYear" required>
+                </div>
+                <div class="form-group">
+                    <label for="descParticipation">Description of Participation:</label>
+                    <textarea id="descParticipation" name="descParticipation" rows="5"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Program and Financial Information Section -->
+            <fieldset>
+                <legend>Program and Financial Information</legend>
+                <div class="form-group">
+                    <label for="tuitionResponsibility">Who will be responsible for your tuition?</label>
+                    <input type="text" id="tuitionResponsibility" name="tuitionResponsibility" required>
+                </div>
+                <div class="form-group">
+                    <label for="previouslyAppliedSDM">Have you previously applied to SDM?</label><br>
+                    <input type="radio" id="yesSDM" name="previouslyAppliedSDM" value="yes">
+                    <label for="yesSDM">Yes</label><br>
+                    <input type="radio" id="noSDM" name="previouslyAppliedSDM" value="no">
+                    <label for="noSDM">No</label>
+                </div>
+                <div class="form-group">
+                    <label for="previouslyAppliedMIT">Have you previously applied to other MIT Graduate Schools?</label><br>
+                    <input type="radio" id="yesMIT" name="previouslyAppliedMIT" value="yes">
+                    <label for="yesMIT">Yes</label><br>
+                    <input type="radio" id="noMIT" name="previouslyAppliedMIT" value="no">
+                    <label for="noMIT">No</label>
+                </div>
+                <div class="form-group">
+                    <label for="howDidYouHear">How did you hear about us?</label><br>
+                    <input type="checkbox" id="friendFamily" name="howDidYouHear" value="friendFamily">
+                    <label for="friendFamily">Friend/Family</label><br>
+                    <input type="checkbox" id="onlineSearch" name="howDidYouHear" value="onlineSearch">
+                    <label for="onlineSearch">Online Search</label><br>
+                    <input type="checkbox" id="collegeFair" name="howDidYouHear" value="collegeFair">
+                    <label for="collegeFair">College Fair</label><br>
+                    <input type="checkbox" id="otherSource" name="howDidYouHear" value="otherSource">
+                    <label for="otherSource">Other</label>
+                </div>
+            </fieldset>
+
+            <!-- Documents Section -->
+            <fieldset>
+                <legend>Documents</legend>
+                <div class="form-group">
+                    <label for="resume">Resume:</label>
+                    <input type="file" id="resume" name="resume" required>
+                    <p>Your resume should include a list of both academic and professional accomplishments, awards, hobbies, interests, and other activities.</p>
+                </div>
+                <div class="form-group">
+                    <label for="statementObjectives">Statement of Objectives:</label>
+                    <input type="file" id="statementObjectives" name="statementObjectives">
+                    <p>Why do you wish to join the SDM Program? How does this fit with your future plans? (300-700 words)</p>
+                </div>
+            </fieldset>
+
+            <!-- Recommendations Section -->
+            <fieldset>
+                <legend>Recommendations</legend>
+                <div class="form-group">
+                    <label for="recommendation">Upload Recommendation Letter:</label>
+                    <input type="file" id="recommendation" name="recommendation" required>
+                    <p>For certificate applicants, submit one letter of recommendation from a professional source. For master's applicants, submit three letters of recommendation.</p>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="addRecommender()">Add Recommender</button>
+                </div>
+            </fieldset>
+
+            <!-- Signature Section -->
+            <fieldset>
+                <legend>Signature</legend>
+                <div class="form-group">
+                    <label for="signature">In place of your signature, please type your full legal name:</label>
+                    <input type="text" id="signature" name="signature" required>
+                    <p>By submitting the application, you certify that your application is accurate and complete and authorize MIT SDM to verify any information provided.</p>
+                </div>
+            </fieldset>
+
+            <!-- Review Section -->
+            <fieldset>
+                <legend>Review Your Application</legend>
+                <p>Review your answers before submitting the application. Ensure that all fields are filled out and documents are uploaded.</p>
+            </fieldset>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function addRecommender() {
+            alert('Option to add a recommender has been clicked!');
+        }
+    </script>
+</body>
+</html>
