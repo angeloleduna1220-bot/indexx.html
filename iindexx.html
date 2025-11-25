@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT SDM Certificate Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MIT SDM Certificate Application Form</h1>
+        <form id="application-form" action="#" method="POST">
+            <!-- Personal Background Section -->
+            <section class="section">
+                <h2>Personal Background</h2>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="citizenship">Citizenship</label>
+                <input type="text" id="citizenship" name="citizenship" required>
+
+                <label for="address">Current Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </section>
+
+            <!-- Academic History Section -->
+            <section class="section">
+                <h2>Academic History</h2>
+                <label for="undergrad-degree">Undergraduate Degree</label>
+                <input type="text" id="undergrad-degree" name="undergrad-degree" required>
+
+                <label for="institution">Institution Name</label>
+                <input type="text" id="institution" name="institution" required>
+
+                <label for="grad-year">Graduation Year</label>
+                <input type="number" id="grad-year" name="grad-year" required>
+
+                <label for="gpa">GPA</label>
+                <input type="text" id="gpa" name="gpa">
+
+                <label for="grad-degree">Graduate Degree (if applicable)</label>
+                <input type="text" id="grad-degree" name="grad-degree">
+
+                <label for="grad-institution">Graduate Institution Name</label>
+                <input type="text" id="grad-institution" name="grad-institution">
+
+                <label for="grad-gpa">Graduate GPA (if applicable)</label>
+                <input type="text" id="grad-gpa" name="grad-gpa">
+            </section>
+
+            <!-- Employment Section -->
+            <section class="section">
+                <h2>Employment History</h2>
+                <label for="current-employer">Current Employer</label>
+                <input type="text" id="current-employer" name="current-employer">
+
+                <label for="current-position">Current Position</label>
+                <input type="text" id="current-position" name="current-position">
+
+                <label for="years-experience">Years of Professional Experience</label>
+                <input type="number" id="years-experience" name="years-experience" required>
+
+                <label for="leadership-experience">Do you have any leadership experience?</label>
+                <select id="leadership-experience" name="leadership-experience">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="job-description">Brief Job Description</label>
+                <textarea id="job-description" name="job-description" required></textarea>
+            </section>
+
+            <!-- Test Scores Section -->
+            <section class="section">
+                <h2>Test Scores</h2>
+                <label for="gmat-score">GMAT Score (if applicable)</label>
+                <input type="number" id="gmat-score" name="gmat-score">
+
+                <label for="gre-score">GRE Score (if applicable)</label>
+                <input type="number" id="gre-score" name="gre-score">
+
+                <label for="toefl-score">TOEFL Score (if applicable)</label>
+                <input type="number" id="toefl-score" name="toefl-score">
+
+                <label for="ielts-score">IELTS Score (if applicable)</label>
+                <input type="number" id="ielts-score" name="ielts-score">
+            </section>
+
+            <!-- Essay Section -->
+            <section class="section">
+                <h2>Essays</h2>
+                <label for="statement-of-purpose">Statement of Purpose</label>
+                <textarea id="statement-of-purpose" name="statement-of-purpose" required></textarea>
+
+                <label for="leadership-essay">Leadership Essay</label>
+                <textarea id="leadership-essay" name="leadership-essay" required></textarea>
+            </section>
+
+            <!-- Supporting Documents Section -->
+            <section class="section">
+                <h2>Supporting Documents</h2>
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" required>
+
+                <label for="transcripts">Upload Transcripts</label>
+                <input type="file" id="transcripts" name="transcripts" required>
+
+                <label for="recommendation-letters">Upload Letters of Recommendation</label>
+                <input type="file" id="recommendation-letters" name="recommendation-letters" required>
+            </section>
+
+            <!-- Agreement Section -->
+            <section class="section">
+                <h2>Agreement</h2>
+                <label for="agreement">I certify that the information I have provided is accurate and complete.</label>
+                <input type="checkbox" id="agreement" name="agreement" required>
+            </section>
+
+            <div class="submit-section">
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
